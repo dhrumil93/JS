@@ -14,3 +14,8 @@ console.log(valueInNumber);
 let isSignedIn = 1
 let booleanIsSignedIn = Boolean(isSignedIn);
 console.log(booleanIsSignedIn);
+
+let age = 18;
+let stringAge = String(age);
+console.log(stringAge);
+console.log(typeof stringAge);
