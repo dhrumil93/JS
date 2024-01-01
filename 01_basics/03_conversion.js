@@ -1,5 +1,5 @@
 // let Age = 18
-let Score = "9021"
+let Score = "9021";
 
 console.log(typeof Score);
 
@@ -8,10 +8,10 @@ console.log(typeof valueInNumber);
 console.log(valueInNumber);
 
 //  "9021" => 9021
-//  "9021abh" => Nan 
+//  "9021abh" => Nan
 // true =>1 false=>0
 
-let isSignedIn = 1
+let isSignedIn = 1;
 let booleanIsSignedIn = Boolean(isSignedIn);
 console.log(booleanIsSignedIn);
 
