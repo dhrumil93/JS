@@ -8,3 +8,7 @@ console.log(Balance.toFixed(2));
 
 const otherNumber = 12.356
 console.log(otherNumber.toPrecision(2));
+
+
+console.log(Math);
+console.log(Math.min(1,4,6,5,8));
