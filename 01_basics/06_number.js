@@ -12,3 +12,5 @@ console.log(otherNumber.toPrecision(2));
 
 console.log(Math);
 console.log(Math.min(1,4,6,5,8));
+console.log(Math.round(4.2));
+console.log(Math.ceil(3.5));
