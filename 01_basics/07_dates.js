@@ -6,3 +6,6 @@ console.log(myDate.toLocaleString());
 
 let myCreatedDate = new Date(2024 , 0 , 4)
 console.log(myCreatedDate.toDateString());
+
+let myTimespace =  Date.now()
+console.log(myTimespace);
