@@ -10,4 +10,18 @@ console.log(arr2[2]);
 //  myArr.unshift(1)
  myArr.shift()
  console.log(myArr);
- 
+
+ console.log(myArr.includes(4));
+ console.log(myArr.indexOf(2));
+
+const newArr = myArr.join()
+console.log(myArr);
+console.log(newArr);
+
+console.log("D" , myArr);
+const myn1 = myArr.slice(1,3)
+console.log(myn1);
+
+console.log("T" ,myArr);
+const myn2 = myArr.splice(1,3)
+console.log(myn2);
