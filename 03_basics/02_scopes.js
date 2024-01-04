@@ -10,3 +10,17 @@ if (true) {
 console.log(a);
 // console.log(b);
 // console.log(c); // Avoid VAR
+
+function one(){
+    const username = "dhrumil93"
+
+    function two(){
+        const name = "Dhrumil"
+        console.log(username);
+    }
+    // console.log(name);
+
+    two()
+}
+
+one()
