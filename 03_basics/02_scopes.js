@@ -18,9 +18,20 @@ function one(){
         const name = "Dhrumil"
         console.log(username);
     }
-    // console.log(name);
+        // console.log(name);
 
     two()
 }
 
 one()
+
+if (true){
+
+    const username1= "Dhrumil"
+    if(username1 === "Dhrumil"){
+        const website = "Bgmi"
+        console.log(username1 + website);
+    }
+    // console.log(website);
+}
+// console.log(username1);
