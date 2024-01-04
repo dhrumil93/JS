@@ -14,3 +14,11 @@ function objectHandling(anyObject) {
     
 }
 objectHandling(user)
+
+const newArr = [200 ,300,400,500]
+function secondNum(getanyarray) {
+    // console.log(getanyarray[1]);
+    return getanyarray[1]
+}
+
+console.log(secondNum(newArr));
