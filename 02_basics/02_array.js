@@ -6,3 +6,6 @@ const cricketers = ["Bumrah","Rohit","Surya"]
 
 const all = heros.concat(cricketers)
 console.log(all);
+
+const n1 = [...cricketers, ...heros]
+console.log(n1);
