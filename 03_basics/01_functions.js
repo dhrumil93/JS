@@ -15,3 +15,8 @@ function addition2(num1, num2) {
 }
 const result1= addition2(4,5)
 console.log(result1);
+
+function loginUser(userName) {    
+    return `${userName} Just logged In`
+}
+console.log(loginUser("Dhrumil"));
