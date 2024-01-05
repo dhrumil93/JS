@@ -38,3 +38,8 @@ const addTwo = (num1, num2) => {
 }
 
 console.log(addTwo(4,3));
+
+// const addition= (number1, number2) => number1 + number2
+const addition= (number1, number2) => (number1 + number2)
+
+console.log(addition(4,9));
