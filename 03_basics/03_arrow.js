@@ -13,3 +13,9 @@ user.username= "Txnvi"
 user.welcomeMessage();
 
 console.log(this);
+
+function boom() {
+    console.log(this);
+}
+
+boom();
