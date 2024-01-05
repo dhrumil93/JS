@@ -14,8 +14,21 @@ user.welcomeMessage();
 
 console.log(this);
 
-function boom() {
+// function boom() {
+
+//     console.log(this);
+// }
+
+// boom();
+
+//     const code = function(){
+//     let username = "Dhrumil"
+//     console.log(this.username);
+// }
+// code();
+
+const code = () => {
+    let username = "Dhrumil"
     console.log(this);
 }
-
-boom();
+code();
