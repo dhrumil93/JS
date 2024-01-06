@@ -17,3 +17,12 @@ if (score > 100) {
     const power = "Fly";
     console.log(`User Power is : ${power}`);
 }
+
+const userLoggedIn = true ;
+const creditCard = true ;
+if(userLoggedIn && creditCard){
+    console.log("You can transfer Money");
+}
+else{
+    console.log("You can't transfer Money");
+}
