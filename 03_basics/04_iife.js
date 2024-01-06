@@ -1,8 +1,7 @@
 (function hi() {
-    console.log(`Hi`);
-}) 
-();
+  console.log(`Hi`);
+})();
 
-((name) =>  {
-    console.log(`hello ${name}`);
-}) (`Dhrumil`)
+((name) => {
+  console.log(`hello ${name}`);
+})(`Dhrumil`);
