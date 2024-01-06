@@ -17,4 +17,3 @@ if (score > 100) {
     const power = "Fly";
     console.log(`User Power is : ${power}`);
 }
-
