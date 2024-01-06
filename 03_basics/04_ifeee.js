@@ -3,6 +3,6 @@
 }) 
 ();
 
-(function hello() {
-    console.log(`hello`);
-}) ()
+((name) =>  {
+    console.log(`hello ${name}`);
+}) (`Dhrumil`)
