@@ -5,6 +5,7 @@ for (let i = 0; i < 10; i++) {
     console.log(element);    
 }
 
+// Example
 
 for (let i = 0; i < 10; i++) {
     console.log(`Outer Loop Element : ${i}`);    
@@ -14,6 +15,7 @@ for (let i = 0; i < 10; i++) {
     }
 }
 
+// Example
 
 let myArray = ["bumrah" ,"Kohli", "Rohit"]
 for (let index = 0; index < myArray.length; index++) {
@@ -22,11 +24,22 @@ for (let index = 0; index < myArray.length; index++) {
     
 }
 
+// Example 
 
 for (let i = 0; i < 20; i++) {
     if (i === 5) {
         console.log("detected 5");
         break;
+    }    
+    console.log(`Value of i ${i}` );
+}
+
+// Example 
+
+for (let i = 0; i < 20; i++) {
+    if (i === 5) {
+        console.log("detected 5");
+        continue;
     }    
     console.log(`Value of i ${i}` );
 }
