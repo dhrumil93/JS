@@ -26,3 +26,9 @@ if(userLoggedIn && creditCard){
 else{
     console.log("You can't transfer Money");
 }
+
+if (userLoggedIn || creditCard) {
+    console.log("You can transfer Money");
+} else{
+    console.log("You Must Have Logged in or Credit Card");
+}
