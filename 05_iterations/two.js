@@ -8,10 +8,10 @@ while (i <= 10) {
 
 // DO WHILE LOOP
 
-let a = 10 ;
+let a = 20 ;
 
 do {
     console.log(`Value of ${a}`);
     a++;
-    
+
 } while (a <= 15);
