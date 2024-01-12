@@ -20,5 +20,22 @@ buttons.forEach( (function (button) {
             body.style.backgroundColor = event.target.id ;
         }
 
+        // switch (event.target.id) {
+        //     case 'green':
+        //         body.style.backgroundColor = event.target.id;
+        //         break;
+        //     case 'yellow':
+        //         body.style.backgroundColor = event.target.id;
+        //         break;
+        //     case 'grey':
+        //         body.style.backgroundColor = event.target.id;
+        //         break;
+        //     case 'blue':
+        //         body.style.backgroundColor = event.target.id;
+        //         break;
+        //     default:
+        //         console.log("Select The Color From Above");
+        //         break;
+        // }
     } )
 }))
