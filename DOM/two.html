@@ -25,5 +25,16 @@
         document.querySelector('.language').appendChild(li)
     }
     addLanguageName("TypeScript")
+
+    // Edit 
+    const secondLang = document.querySelector("li:nth-child(2)")
+    // secondLang.innerHTML = "XML"
+    const newli = document.createElement('li')
+    newli.textContent = "XML"
+    secondLang.replaceWith(newli);
+
+    // remove 
+    const lastLang = document.querySelector('li:last-child');
+    lastLang.remove();
 </script>
 </html>
