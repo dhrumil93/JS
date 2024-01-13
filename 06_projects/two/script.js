@@ -1,4 +1,4 @@
-const form = document.querySelector('.form');
+const form = document.querySelector('form');
 
 form.addEventListener('submit',function (event) {
     event.preventDefault();
@@ -7,9 +7,9 @@ form.addEventListener('submit',function (event) {
     const weight = parseInt(document.querySelector('#weight').value);
     const results = document.querySelector('#results');
 
-    if ( height === ' ' || height <= 0 || isNaN(height) ) {
+    if ( height === '' || height < 0 || isNaN(height) ) {
         results.innerHTML = 'Please Give a Valid Height';
-    } else if ( weight === ' ' || weight <= 0 || isNaN(weight) ) {
+    } else if ( weight === '' || weight < 0 || isNaN(weight) ) {
         results.innerHTML = 'Please Give a Valid weight';
     }
     else {
