@@ -1,22 +1,32 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BMI Calculator</title>
-    <link type="stylesheet" src="style.css">
-</head>
-<body style="background-color: black; color: white;">
+    <link type="stylesheet" src="style.css" />
+  </head>
+  <body style="background-color: black; color: white">
     <nav>
-        <a href="#" aria-current="page">Home</a>
-        <a href="https://www.youtube.com">Youtube</a>
+      <a href="#" aria-current="page">Home</a>
+      <a href="https://www.youtube.com">Youtube</a>
     </nav>
-    <main>
-        <h2>Hello User</h2>
-        <div class="calculator">
-            
+    <h2>Hello User</h2>
+    <div class="calculator">
+      <h2>BMI Calculator</h2>
+      <form>
+        <p><label>Height in CM:</label><input type="text" id="height" /></p>
+        <p><label>Weight inn KG:</label><input type="text" id="weight" /></p>
+        <button>Calculate</button>
+        <div id="results"></div>
+        <div id="weight-guide">
+          <h3>BMI Weight Guide</h3>
+          <p>Under Weight = less then 18.6</p>
+          <p>Normal Range = 18.6 to 24.9</p>
+          <p>OverWeight = Greater then 24.9</p>
         </div>
-    </main>
+      </form>
+    </div>
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
