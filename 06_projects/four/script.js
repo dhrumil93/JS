@@ -26,12 +26,27 @@ function validateGuess(guess) {
     if (isNaN(guess)){
         alert ('Please Enter Valid Number.')
     }else if (guess < 1){
-        alert ('Please Enter Valid Number.')        
+        alert ('Please Enter Number Greater than 1.')        
+    }
+    else if (guess > 100){
+        alert ('Please Enter Number less than 100.')        
+    }else {
+        prevGuess.push(guess);
+        if (numGuess === 11 ){
+            displayGuess(guess);
+            displayMessage(`Game Over , Random Number was ${randomNum}`);
+            endGame();
+        } else {
+            displayGuess(guess);
+            cheackGuess(guess);
+        }
     }
 }
 
 function cheackGuess(guess) {
-  // console.log("Number Is Correct.");
+    if (guess === randomNum) {
+        displayMessage(`Your Guess Is Correct`)
+    }
 }
 
 function displayGuess(guess) {
