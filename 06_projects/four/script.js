@@ -45,22 +45,30 @@ function validateGuess(guess) {
 
 function cheackGuess(guess) {
     if (guess === randomNum) {
-        displayMessage(`Your Guess Is Correct`)
+        displayMessage(`Your Guess Is Correct`);
+        endGame()
+    }else if (numGuess > randomNum ) {
+        displayMessage(`Number is tooo High`);
+    }
+    else if (numGuess < randomNum ) {
+        displayMessage(`Number is tooo Low`);
     }
 }
 
 function displayGuess(guess) {
-    
+    userInput.value = ' '
+    userGuess.innerHTML += `${guess}`;
+    numGuess ++ ;
 }
 
 function displayMessage(message) {
-  //
+  
 }
 
 function endGame() {
-    // 
+    
 }
 
 function newGame() {
-    // 
+
 }
