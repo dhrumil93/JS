@@ -58,8 +58,26 @@
     </div>
   </body>
   <script>
-    document.getElementById('owl').addEventListener('click' , function(){
-        alert('Owl Is clicked !!')
-    })
+    document.getElementById('images').addEventListener(
+      'click',
+      function (e) {
+        console.log("Clicked inside the Images !");
+      },
+      false
+    );
+    document.getElementById('owl').addEventListener(
+      'click',
+      function (e) {
+        console.log("Owl Is clicked !!");
+        e.stopPropagation();
+      },
+      false
+    );
+    document.getElementById('google').addEventListener(
+      'click',
+      function(e){
+        console.log("Google Clicked !");
+      }
+    )
   </script>
 </html>
