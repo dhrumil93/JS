@@ -79,11 +79,13 @@
     //     e.preventDefault();
     //     e.stopPropagation();
     //     console.log("Google Clicked !");
-    //   }, 
+    //   },
     //   false
     //   );
-    document.querySelector('#images').addEventListener('click' , function (e){
-      console.log(e.target);
-    })
+    document.querySelector("#images").addEventListener("click", function (e) {
+      console.log(e.target.parentNode);
+      let removePic =  e.target.parentNode
+      removePic.remove();
+    });
   </script>
 </html>
