@@ -83,9 +83,12 @@
     //   false
     //   );
     document.querySelector("#images").addEventListener("click", function (e) {
-      console.log(e.target.parentNode);
-      let removePic =  e.target.parentNode
-      removePic.remove();
+      console.log(e.target.tagName);
+      if (e.target.tagName === "IMG") {
+        let removePic = e.target.parentNode;
+        removePic.remove();
+      }
+      // removePic.parentNode.removeChild(removePic)
     });
   </script>
 </html>
