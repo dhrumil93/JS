@@ -10,9 +10,13 @@
     <button id="stop">Stop</button>
     
     <script>
-        setTimeout(function(){
-            console.log("Dhrumil");
-        },2000);
+
+        const changeText = function(){
+            document.querySelector('h1').innerHTML = "HELLO"
+        }
+        const change = setTimeout(changeText,2000);
+        // clearTimeout(change);
+
     </script>
 </body>
 </html>
