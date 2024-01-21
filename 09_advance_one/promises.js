@@ -27,3 +27,22 @@ const promiseR = new Promise(function (resolve, reject) {
 promiseR.then(function(user){
     console.log(user);
 })
+
+const promiseU = new Promise(function (resolve, reject) {
+    setTimeout(() => {
+        let error = false ;
+        if (!error) {
+            resolve({userName : "Dhrumil" , password : "123"})
+        }else{
+            reject('Error Found')
+        }
+    }, 1000);
+ })
+promiseU.then( (user) => {
+    console.log(user);
+    return user.userName;
+ }).then((userName) => {
+    console.log(userName);
+ }).catch(function(error){
+    console.log(error);
+ })
