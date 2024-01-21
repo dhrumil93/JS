@@ -61,6 +61,10 @@ promiseU.then( (user) => {
 })
 
 async function promiseMy() {
-  const response = await promiseH
-  console.log(response);
+  try {
+    const response = await promiseH
+    console.log(response);
+  } catch (error) {
+    console.log(error);
+  }
 }
