@@ -19,7 +19,8 @@
         xml.onreadystatechange = function () {
             console.log(xml.readyState)
             if (xml.readyState === 4) {
-                console.log(this.responseText);
+                const data = JSON.parse(this.responseText)
+                console.log(data.followers);
             }
         }
         xml.send()
