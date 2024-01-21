@@ -48,3 +48,19 @@ promiseU.then( (user) => {
  }).finally(()  => {
   console.log("The Promise is either resolved or rejected");
  })
+
+ const promiseM = new Promise(function (resolve, reject) {
+  setTimeout(() => {
+      let error = true ;
+      if (!error) {
+          resolve({userName : "DHHRUMIL" , password : "123"})
+      }else{
+          reject('Error to be Found')
+      }
+  }, 1000);
+})
+
+async function promiseMy() {
+  const response = await promiseH
+  console.log(response);
+}
