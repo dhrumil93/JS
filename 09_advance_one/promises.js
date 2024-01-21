@@ -45,4 +45,6 @@ promiseU.then( (user) => {
     console.log(userName);
  }).catch(function(error){
     console.log(error);
+ }).finally(()  => {
+  console.log("The Promise is either resolved or rejected");
  })
