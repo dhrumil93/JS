@@ -18,6 +18,9 @@
         xml.open('GET',link)
         xml.onreadystatechange = function () {
             console.log(xml.readyState)
+            if (xml.readyState === 4) {
+                console.log(this.responseText);
+            }
         }
         xml.send()
     </script>
