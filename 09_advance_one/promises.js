@@ -67,4 +67,7 @@ async function promiseMy() {
   } catch (error) {
     console.log(error);
   }
+};
+
+promiseMy(){
 }
