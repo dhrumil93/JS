@@ -62,12 +62,22 @@ promiseU.then( (user) => {
 
 async function promiseMy() {
   try {
-    const response = await promiseH
+    const response = await promiseM
     console.log(response);
   } catch (error) {
     console.log(error);
   }
 };
 
-promiseMy(){
+promiseMy()
+
+async function getallUsers(){ 
+  try {
+    const response = await fetch('https://jsonplaceholder.typicode.com/users')
+    const data = await response.json()
+    console.log(data);
+  } catch (error) {
+    console.log("E: ",error);
+  }
 }
+getallUsers()
