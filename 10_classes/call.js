@@ -3,7 +3,7 @@ function setUserName (userName){
     console.log("called");
 }
 function createUser (userName , email){
-    setUserName.call(userName)
+    setUserName.call(this,userName)
     this.email = email;
 }
 
