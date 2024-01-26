@@ -5,6 +5,7 @@ const user = {
     
     getallUser : function () {
         console.log("User Details Fetch");
+        console.log(`Username : ${this.userName}`);
     }
 }
 
