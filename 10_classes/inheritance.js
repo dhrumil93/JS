@@ -15,4 +15,11 @@ class teacher extends user{
         this.email = email;
         this.password = password;
     }
+
+    addCourse(){
+        console.log(`New Course Added By ${this.userName}`);
+    }
 }
+
+const cricket = new teacher("Dhrumil","email@email.com","123")
+cricket.addCourse();
