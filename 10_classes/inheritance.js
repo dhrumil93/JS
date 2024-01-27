@@ -23,3 +23,7 @@ class teacher extends user{
 
 const cricket = new teacher("Dhrumil","email@email.com","123")
 cricket.addCourse();
+cricket.logMe()
+
+const cricketer = new user("Dhrumil")
+cricketer.logMe();
