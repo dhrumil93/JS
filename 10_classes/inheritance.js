@@ -27,3 +27,5 @@ cricket.logMe()
 
 const cricketer = new user("Dhrumil")
 cricketer.logMe();
+
+console.log(cricket instanceof teacher);
