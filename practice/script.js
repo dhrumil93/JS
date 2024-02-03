@@ -1,10 +1,20 @@
+
 const formOne = document.getElementById('form');
 formOne.addEventListener('submit',function (event){
     event.preventDefault();
 
-    const userName = (document.getElementById('name').value);
-    const passWord = (document.getElementById('password').value);
+    const useri = {
+        userNamei : (document.getElementById('name').value),
+        passWordi : (document.getElementById('password').value)
+        }
+    const user ={
+        userName : "dhrumil_93",
+        passWord: "asd"
+    }
 
-    console.log(userName)
-    console.log(passWord);
+    if (useri.userNamei === user.userName && useri.passWordi===user.passWord ) {
+        console.log("sucessfull!!");
+    }else{
+        console.log("Failed!!");
+    }
 })
