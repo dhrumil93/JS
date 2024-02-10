@@ -1,4 +1,3 @@
-
 const formOne = document.getElementById('form');
 formOne.addEventListener('submit',function (event){
     event.preventDefault();
