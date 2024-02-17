@@ -1,12 +1,12 @@
 function fetchWeather() {
   const city = document.getElementById("city").value;
-  const apiKey = "7383f1df1a40e18dee9bd84dafb10875"; // Replace with your OpenWeatherMap API key
+  const apiKey = "7383f1df1a40e18dee9bd84dafb10875"; 
   const url = `http://api.openweathermap.org/geo/1.0/direct?q=${city}&limit=5&appid=${apiKey}`;
 
   fetch(url)
     .then((response) => response.json())
     .then((data) => {
-      // Assuming the first result is the desired location
+
       const location = data[0];
       const lat = location.lat;
       const lon = location.lon;
@@ -20,7 +20,7 @@ function fetchWeather() {
 }
 
 function getWeather(lat, lon, city) {
-  const apiKey = "7383f1df1a40e18dee9bd84dafb10875"; // Replace with your OpenWeatherMap API key
+  const apiKey = "7383f1df1a40e18dee9bd84dafb10875";
   const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
   fetch(url)
